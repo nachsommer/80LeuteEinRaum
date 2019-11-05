@@ -19,7 +19,7 @@ public class TestHelloWorld {
          */
 
         String aepfel = "Dreieinhalb";
-        String birnen = "3.5";
+        String birnen = "4.5";
 
         String obst = aepfel + birnen;
 
