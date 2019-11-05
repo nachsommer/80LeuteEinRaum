@@ -30,8 +30,10 @@ public class TestHelloWorld {
         double aepfel2 = 3.5;
         double birnen2 = 3.5;
 
+        String banane = "Chicita";
+
         System.out.println( aepfel2 + birnen2 );
-        System.out.println( "Mal schauen, was jetzt passiert..." );
+        System.out.println( "Mal schauen, was jetzt passiert..." + " " + banane);
 
     }
 
