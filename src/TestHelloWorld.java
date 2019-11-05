@@ -31,6 +31,7 @@ public class TestHelloWorld {
         double birnen2 = 3.5;
 
         System.out.println( aepfel2 + birnen2 );
+        System.out.println( "Mal schauen, was jetzt passiert..." );
 
     }
 
