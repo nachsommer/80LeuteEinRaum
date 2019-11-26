@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class TestHelloWorld {
 
     public static void main(String[] args) {
@@ -5,9 +7,11 @@ public class TestHelloWorld {
         System.out.println( "\nHello World!" );
         test();
         TestWindow fenster = new TestWindow();
-        fenster.setVisible( true );
+        fenster.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
         fenster.setSize( 200, 120 );
         fenster.setLocation( 200, 120 );
+        fenster.setVisible( true );
+        fenster.validate();
     }
 
     public static void test() {
