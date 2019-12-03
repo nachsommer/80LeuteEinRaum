@@ -41,16 +41,20 @@ public class TestHelloWorld {
 
     }
 
+    // funtion to check if the input string contains only numbers
     public static boolean isNumeric(String input) {
 
+        // if input string is null or emtpy return false
         if (input == null || input.isEmpty()) {
             return false;
         }
+        // try to convert string to int. If format is wrong, return false
         try {
             int number = Integer.parseInt(input);
         } catch (NumberFormatException e) {
             return false;
         }
+        // input string is not null, not empty and in the right format
         return true;
     }
 
