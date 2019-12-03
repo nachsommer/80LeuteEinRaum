@@ -41,4 +41,17 @@ public class TestHelloWorld {
 
     }
 
+    public static boolean isNumeric(String input) {
+
+        if (input == null || input.isEmpty()) {
+            return false;
+        }
+        try {
+            int number = Integer.parseInt(input);
+        } catch (NumberFormatException e) {
+            return false;
+        }
+        return true;
+    }
+
 }
