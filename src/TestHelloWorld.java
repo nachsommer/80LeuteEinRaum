@@ -56,6 +56,7 @@ public class TestHelloWorld {
         }
         // input string is not null, not empty and in the right format
         return true;
+        //just a tiny test to see if this will also work with my new home set-up
     }
 
 }
