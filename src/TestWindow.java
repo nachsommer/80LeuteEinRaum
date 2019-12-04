@@ -53,10 +53,15 @@ public class TestWindow extends JFrame {
                  */
                 if(sb1.length() > 0) integer1 = Integer.parseInt(sb1.toString());
                 if(sb2.length() > 0) integer2 = Integer.parseInt(sb2.toString());
-                /**
-                 * And show a DialogMessage to display the saved values.
-                 */
+                int integer3;
+                int integer4;
+                integer3 = (integer1+integer2);
+                integer4 = (integer1-integer2);
+                //**
+                // * And show a DialogMessage to display the saved values.
+                // */
                 JOptionPane.showMessageDialog(null, "VariableA= "+integer1+"\nVariableB= "+integer2);
+                JOptionPane.showMessageDialog(null, "Addition= "+integer3+"\nSubtraction= "+integer4);
             }
         });
     }
