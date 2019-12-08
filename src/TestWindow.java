@@ -60,8 +60,8 @@ public class TestWindow extends JFrame {
                 //**
                 // * And show a DialogMessage to display the saved values.
                 // */
-                JOptionPane.showMessageDialog(null, "VariableA= "+integer1+"\nVariableB= "+integer2);
-                JOptionPane.showMessageDialog(null, "Addition= "+integer3+"\nSubtraction= "+integer4);
+                JOptionPane.showMessageDialog(null, "VariableA = "+integer1+"\nVariableB= "+integer2);
+                JOptionPane.showMessageDialog(null, "Addition = "+integer3+"\nSubtraction= "+integer4);
             }
         });
     }
