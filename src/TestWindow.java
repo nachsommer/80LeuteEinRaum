@@ -30,6 +30,7 @@ public class TestWindow extends JFrame {
                 Hausaufgabe!
 
                  */
+                textField2.requestFocus();
 
             }
         } );
