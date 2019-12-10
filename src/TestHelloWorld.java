@@ -58,4 +58,3 @@ public class TestHelloWorld {
         return true;
     }
 }
-hallo
