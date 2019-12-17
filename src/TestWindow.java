@@ -44,11 +44,6 @@ public class TestWindow extends JFrame {
                     if(Character.isDigit(ch)| (ch == '-' && i == 0)) sb2.append(ch);
                 }
                 /**
-                 * We clear the Textfields.
-                 */
-                textField1.setText("");
-                textField2.setText("");
-                /**
                  * We translate the StringBuffer into a String which we subsequently translate into an Integer number.
                  */
                 if(sb1.length() > 0) integer1 = Integer.parseInt(sb1.toString());
@@ -57,11 +52,6 @@ public class TestWindow extends JFrame {
                 int integer4;
                 integer3 = (integer1 + integer2);
                 integer4 = (integer1 - integer2);
-                //**
-                // * And show a DialogMessage to display the saved values.
-                // */
-                JOptionPane.showMessageDialog( null, "VariableA= " + integer1 + "\nVariableB= " + integer2 );
-                JOptionPane.showMessageDialog( null, "Addition= " + integer3 + "\nSubtraction= " + integer4 );
             }
         } );
 
