@@ -39,7 +39,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="Function"/>
+          <text value="Arithmetik:"/>
         </properties>
       </component>
       <component id="ac31" class="javax.swing.JLabel">
