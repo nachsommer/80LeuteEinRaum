@@ -6,7 +6,6 @@ import java.awt.event.ActionListener;
 public class TestWindow extends JFrame {
     private JButton button1;
     private JPanel jPanel0;
-    private JPanel jPanel1;
     private JTextField textField1;
     private JTextField textField2;
     Integer integer1;

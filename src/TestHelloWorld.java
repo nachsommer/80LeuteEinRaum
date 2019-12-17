@@ -8,7 +8,7 @@ public class TestHelloWorld {
         test();
         TestWindow fenster = new TestWindow();
         fenster.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
-        fenster.setSize( 250, 120 );
+        fenster.setSize( 250, 180 );
         fenster.setLocation( 200, 120 );
         fenster.setVisible( true );
         fenster.validate();
