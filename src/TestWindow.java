@@ -15,7 +15,7 @@ public class TestWindow extends JFrame {
         this.integer1 = 0;
         this.integer2 = 0;
         this.add( jPanel0 );
-        button1.addActionListener(new ActionListener() {
+        button1.addActionListener( new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 /**
@@ -51,18 +51,31 @@ public class TestWindow extends JFrame {
                  * We translate the StringBuffer into a String which we subsequently translate into an Integer number.
                  */
                 if(sb1.length() > 0) integer1 = Integer.parseInt(sb1.toString());
-                if(sb2.length() > 0) integer2 = Integer.parseInt(sb2.toString());
+                if (sb2.length() > 0) integer2 = Integer.parseInt( sb2.toString() );
                 int integer3;
                 int integer4;
-                integer3 = (integer1+integer2);
-                integer4 = (integer1-integer2);
+                integer3 = (integer1 + integer2);
+                integer4 = (integer1 - integer2);
                 //**
                 // * And show a DialogMessage to display the saved values.
                 // */
-                JOptionPane.showMessageDialog(null, "VariableA= "+integer1+"\nVariableB= "+integer2);
-                JOptionPane.showMessageDialog(null, "Addition= "+integer3+"\nSubtraction= "+integer4);
+                JOptionPane.showMessageDialog( null, "VariableA= " + integer1 + "\nVariableB= " + integer2 );
+                JOptionPane.showMessageDialog( null, "Addition= " + integer3 + "\nSubtraction= " + integer4 );
             }
-        });
+        } );
+        textField1.addActionListener( new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField2.requestFocus();
+            }
+        } );
+        textField2.addActionListener( new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                button1.requestFocus();
+            }
+        } );
+        textField1.requestFocus();
     }
 
 
