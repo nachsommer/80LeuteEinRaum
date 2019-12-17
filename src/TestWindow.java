@@ -63,18 +63,24 @@ public class TestWindow extends JFrame {
                 JOptionPane.showMessageDialog( null, "Addition= " + integer3 + "\nSubtraction= " + integer4 );
             }
         } );
+
         textField1.addActionListener( new ActionListener() {
+            // After hitting <ENTER> the user's cursor will be transferred to textField2;
             @Override
             public void actionPerformed(ActionEvent e) {
                 textField2.requestFocus();
             }
         } );
+
         textField2.addActionListener( new ActionListener() {
+            // After hitting <ENTER> the user's cursor will be transferred to the calculation button;
             @Override
             public void actionPerformed(ActionEvent e) {
                 button1.requestFocus();
             }
         } );
+
+        // Smoothing the appearance: Once the window is shown, the user will be prompted to textField1
         textField1.requestFocus();
     }
 
