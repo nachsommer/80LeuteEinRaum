@@ -8,6 +8,7 @@ public class TestWindow extends JFrame {
     private JPanel jPanel0;
     private JTextField textField1;
     private JTextField textField2;
+    private JComboBox comboBox1;
     Integer integer1;
     Integer integer2;
 
@@ -82,10 +83,22 @@ public class TestWindow extends JFrame {
 
         // Smoothing the appearance: Once the window is shown, the user will be prompted to textField1
         textField1.requestFocus();
+
     }
 
 
-
+    public void calculateValues(int position) {
+        switch (position) {
+            case 0:
+                System.out.println( "Plus" );
+            case 1:
+                System.out.println( "Minux" );
+            case 2:
+                System.out.println( "Mal" );
+            case 3:
+                System.out.println( "Geteilt" );
+        }
+    }
 
 
 }
